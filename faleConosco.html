@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/styles.css">
+    <title>Chiquinho Pet Shop</title>
+</head>
+
+<body>
+    <header>
+        <h1>Fale Conosco - Chiquinho Pet Shop</h1>
+    </header>
+    <nav class="navegacao">
+        <a href="index.html">Home</a>
+        <a href="#">Cachorro</a>
+        <a href="#">Gato</a>
+        <a href="#">Outros Pets</a>
+        <a href="#produtos">Promoções</a>
+        <a href="#">Acessórios</a>
+        <a href="#">Cuidados</a>
+        <a href="SobreNos.html">Sobre Nós</a>
+        <a href="faleConosco.html">Fale Conosco</a>
+    </nav>
+
+    <p>Tem alguma dúvida ou precisa de ajuda? No Chiquinho Pet Shop, estamos aqui para ajudar! Entre em contato conosco
+        através do formulário abaixo ou envie-nos um e-mail. Responderemos o mais rápido possível para garantir que você
+        tenha a melhor experiência de compra.</p>
+
+    <h2>Bem-vindo ao nosso atendimento</h2>
+    <form action="" method="post" class="form">
+        <label>Nome: </label>
+        <input type="text" maxlength="50" required><br>
+        <label>Sobrenome: </label>
+        <input type="text" maxlength="30"><br>
+        <label>E-mail: </label>
+        <input type="email" maxlength="50" required><br>
+        <label>CPF: </label>
+        <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" placeholder="Digite o CPF no formato 000.000.000-00"
+            required><br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" maxlength="12" placeholder="(XX) XXXXX-XXXX" required><br>
+
+        
+        <label>Selecione um Assunto:</label>
+        <select name="assunto"required>
+            <option value=""></option>
+            <optgroup label="Todos os Produtos">
+                <option value="Adote um Pet">Adote um Pet</option>
+                <option value="Banho e Tosa">Banho e Tosa</option>
+                <option value="Centro Veterinário">Centro Veterinário</option>
+                <option value="Loja Física">Loja Física</option>
+                <option value="Loja Virtual">Loja Virtual</option>
+                <option value="Parcerias">Parcerias</option>
+                <option value="Vidas">Vidas</option>
+            </optgroup>
+        </select>
+
+        <label>Selecione um Motivo:</label>
+        <select name="motivo" required>
+            <option value=""></option>
+            <optgroup label="Outros Assuntos">
+                <option value="Informação">Informação</option>
+                <option value="Reclamação">Reclamação</option>
+                <option value="Solicitação">Solicitação</option>
+                <option value="Opinião do cliente">Opinião do cliente</option>
+            </optgroup>
+        </select>
+        <label for="mensagem">Escreva sua mensagem:</label>
+        <textarea id="mensagem" name="mensagem" maxlength="1000" rows="5" cols="33"
+            placeholder="Escreva aqui como podemos te ajudar! :)" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+
+</body>
+
+</html>

@@ -1,19 +1,71 @@
-.imagesPadrao {
-    width: 400px;
-}
-
-.navegacao {
-    text-align: center;
-}
-
-.products-container {
-    text-align: center;
-    display: flex;
-    gap: 10px;
+/**********************Index**********************/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 header {
     text-align: center;
+    background-color: #F5F5F5; 
+    padding: 20px 0;
+    position: relative; /* Para centralizar e controlar o posicionamento */
+}
+
+.logo_chiquinho {
+    width: 180px; /* Ajusta o tamanho da logo */
+    height: auto;
+    margin: 0 auto; /* Remove margens externas */
+    display: block;
+    padding: 5px; /* Diminui o padding em volta da logo */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+}
+
+/* Estilo da navegação */
+.navegacao {
+    background-color: #272727; /* Fundo cinza escuro */
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: #F05151; /* Vermelho da logo para os links */
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.navegacao a:hover {
+    color: #ff6767; /* Tom mais claro de vermelho ao passar o mouse */
+}
+
+/* Correção para centralizar navegação e evitar margem extra */
+.navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.navegacao a {
+    padding: 15px 10px;
+}
+
+.corPadraoTexto{
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.75;
+}
+.products-container {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
 }
 
 .videoApresentacao {
@@ -22,7 +74,29 @@ header {
     max-width: 100%;
     border-radius: 10px;
 }
+.banner {         
+    width: 100%;                
+  }
+  
 
+/**********************Fale Conosco**********************/
+
+#EnvFormulario {
+    display: flex;
+    background-color: #F05151; 
+    border: none;
+    color: white;
+    padding: 15px 100px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#EnvFormulario:hover {
+    background-color: #833939; 
+}
 .form {
     width: 50%;
     margin: 0 auto;
@@ -44,24 +118,65 @@ header {
     box-sizing: border-box;
 }
 
-button {
-    background-color: #2196F3;
-    border: none;
-    color: white;
-    padding: 15px 100px;
-    text-align: center;
-    display: block;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 0 auto;
-}
 .form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    box-sizing: border-box; 
-    resize: vertical; 
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/**********************Footer**********************/
+
+.footer {
+    background-color: #272727;
+    padding: 20px 0;
+    margin-top: 40px; /*margem superior*/
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.footer-copy {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #B3B3B3; 
+}
+
+/**********************Sobre Nós**********************/
+#sobre-nos-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+#sobre-nos-container h1,
+#sobre-nos-container h2 {
+    color: #333;
+    text-align: center;
+}
+
+#sobre-nos-container p {
+    text-align: justify;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+#sobre-nos-valores {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#sobre-nos-valores li {
+    background-color: #F05151;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 

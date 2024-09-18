@@ -9,21 +9,19 @@ header {
     text-align: center;
     background-color: #F5F5F5; 
     padding: 20px 0;
-    position: relative; /* Para centralizar e controlar o posicionamento */
+    position: relative; 
 }
 
 .logo_chiquinho {
-    width: 180px; /* Ajusta o tamanho da logo */
+    width: 180px; 
     height: auto;
-    margin: 0 auto; /* Remove margens externas */
+    margin: 0 auto; 
     display: block;
-    padding: 5px; /* Diminui o padding em volta da logo */
-    border-radius: 5px; /* Bordas levemente arredondadas */
+    padding: 5px; 
 }
 
-/* Estilo da navegação */
 .navegacao {
-    background-color: #272727; /* Fundo cinza escuro */
+    background-color: #272727; 
     padding: 15px 0;
     text-align: center;
     font-family: 'Arial', sans-serif;
@@ -31,7 +29,7 @@ header {
 
 .navegacao a {
     text-decoration: none;
-    color: #F05151; /* Vermelho da logo para os links */
+    color: #F05151; 
     margin: 0 20px;
     font-size: 18px;
     font-weight: bold;
@@ -40,10 +38,9 @@ header {
 }
 
 .navegacao a:hover {
-    color: #ff6767; /* Tom mais claro de vermelho ao passar o mouse */
+    color: #ffffff;
 }
 
-/* Correção para centralizar navegação e evitar margem extra */
 .navegacao {
     display: flex;
     justify-content: center;

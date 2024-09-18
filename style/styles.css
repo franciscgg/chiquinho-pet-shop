@@ -7,80 +7,112 @@ body {
 
 header {
     text-align: center;
-    background-color: #F5F5F5; 
+    background-color: #F5F5F5;
     padding: 20px 0;
-    position: relative; 
+    position: relative;
+}
+
+.banner {
+    width: 100%;
 }
 
 .logo_chiquinho {
-    width: 180px; 
+    width: 180px;
     height: auto;
-    margin: 0 auto; 
+    margin: 0 auto;
     display: block;
-    padding: 5px; 
+    padding: 5px;
+}
+
+.corPadraoTexto {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.75;
 }
 
 .navegacao {
-    background-color: #272727; 
-    padding: 15px 0;
+    background-color: #272727;
+    padding: 5px 0;
     text-align: center;
     font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navegacao a {
     text-decoration: none;
-    color: #F05151; 
+    color: #F05151;
     margin: 0 20px;
     font-size: 18px;
     font-weight: bold;
     transition: color 0.3s ease;
     display: inline-block;
+    padding: 15px 10px;
+    /* espaçamento consistente */
 }
 
 .navegacao a:hover {
     color: #ffffff;
 }
 
-.navegacao {
+.h2Dest {
+    color: #666;
+    font-size: 24px;
+}
+
+/**********************Icons**********************/
+.icon-group {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 20px; /* Espaçamento entre os ícones do grupo */
+    margin-left: 30px;
+}
+
+.icon-group a {
+    margin: 0;
     padding: 0;
 }
 
-.navegacao a {
-    padding: 15px 10px;
+.icon-group a i {
+    font-size: 20px;
+    color: #F05151;
 }
 
-.corPadraoTexto{
-    text-align: center;
-    color: #666;
-    font-size: 16px;
-    line-height: 1.75;
+.icon-group a:hover i {
+    color: #ffffff;
+    /* Efeito hover ícones */
 }
-.products-container {
-    text-align: center;
+
+/**********************Sections Gato,Cachorro**********************/
+
+#padraoSec {
     display: flex;
-    justify-content: center; 
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.videoApresentacao {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    border-radius: 10px;
+#padraoSec figure {
+    margin: 10px;
+    text-align: center;
 }
-.banner {         
-    width: 100%;                
-  }
-  
+
+#padraoSec img {
+    max-width: 100%;
+    height: auto;
+}
+
+.h2Sec {
+    color: #666;
+    font-size: 24px;
+    margin-left: 15%;
+}
 
 /**********************Fale Conosco**********************/
 
 #EnvFormulario {
     display: flex;
-    background-color: #F05151; 
+    background-color: #F05151;
     border: none;
     color: white;
     padding: 15px 100px;
@@ -92,8 +124,9 @@ header {
 }
 
 #EnvFormulario:hover {
-    background-color: #833939; 
+    background-color: #833939;
 }
+
 .form {
     width: 50%;
     margin: 0 auto;
@@ -123,13 +156,21 @@ header {
     box-sizing: border-box;
     resize: vertical;
 }
+.banner-contato {
+    display: block; 
+    margin: 0 auto; 
+    width: 75%; 
+    padding: 50px; 
+    border-radius: 77px;
+}
 
 /**********************Footer**********************/
 
 .footer {
     background-color: #272727;
     padding: 20px 0;
-    margin-top: 40px; /*margem superior*/
+    margin-top: 40px;
+    /*margem superior*/
     text-align: center;
     color: #FFFFFF;
 }
@@ -138,7 +179,7 @@ header {
 .footer-copy {
     margin-top: 15px;
     font-size: 14px;
-    color: #B3B3B3; 
+    color: #B3B3B3;
 }
 
 /**********************Sobre Nós**********************/
@@ -176,4 +217,3 @@ header {
     margin-bottom: 5px;
     border-radius: 5px;
 }
-

@@ -8,6 +8,7 @@
     <title>Chiquinho Pet Shop</title>
     <link rel="shortcut icon" href="/images/faviconteste.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,10 +19,9 @@
 
         <nav class="navegacao">
             <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="#"><i class="fa-solid fa-dog"></i> Cachorro</a>
-            <a href="#"><i class="fa-solid fa-cat"></i> Gato</a>
-            <a href="#"><i class="fa-solid fa-paw"></i> Outros Pets</a>
-            <a href="#produtos"><i class="fa-solid fa-percent"></i> Promoções</a>
+            <a href="#cachorros"><i class="fa-solid fa-dog"></i> Cachorro</a>
+            <a href="#gatos"><i class="fa-solid fa-cat"></i> Gato</a>
+            <a href="#produtos"><i class="fa-solid fa-box"></i> Produtos</a>
             <a href="#"><i class="fa-solid fa-bag-shopping"></i> Acessórios</a>
             <a href="#"><i class="fa-solid fa-heart-crack"></i> Cuidados</a>
             <a href="SobreNos.html"><i class="fas fa-users"></i> Sobre Nós</a>
@@ -37,7 +37,6 @@
 
 
         <img class="banner" src="/images/chiquinhopetshop2.png" alt="Banner Chiquinho Pet Shop">
-
         <div class="container">
             <p class="corPadraoTexto">Bem-vindo ao Chiquinho Pet Shop, o seu destino online para tudo o que seu pet
                 precisa!
@@ -46,8 +45,98 @@
                 acessórios e cuidados especiais, temos tudo para garantir que seu amigo de quatro patas esteja sempre
                 feliz e saudável.
             </p>
+            <!-- Produtos -->
+            <h2 id="produtos" class="h2Prod">Produtos que você só encontra no Chiquinho Pet Shop!</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/produtos/produto1.jpg"
+                        alt="Areia Higiênica Cansei de Ser Gato Biodegradável Grãos Finos" class="product-image">
+                    <p class="pProduto">Areia Higiênica Cansei de Ser Gato Biodegradável Grãos Finos</p>
+                    <p style="font-size: 13px; color: #858484;">A partir de</p>
+                    <p class="preco">R$ 15,22</p>
+                    <button class="add-button">Adicionar</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/produtos/produto2.jpg"
+                        alt="Super Secão Citrus Tapete Higiênico Petix para Cães - 30 Unidades" class="product-image">
+                    <p class="pProduto">Super Secão Citrus Tapete Higiênico Petix para Cães - 30 Unidades</p>
+                    <p style="font-size: 13px; color: #858484;">A partir de</p>
+                    <p class="preco">R$ 85,59</p>
+                    <button class="add-button">Adicionar</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/produtos/produto4.jpg" alt="Snack Petz Salmão para Gatos Adultos - 60g"
+                        class="product-image">
+                    <p class="pProduto">Snack Petz Salmão para Gatos Adultos - 60g</p>
+                    <p style="font-size: 13px; color: #858484;">A partir de</p>
+                    <p class="preco">R$ 6,99</p>
+                    <button class="add-button">Adicionar</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/produtos/produto7.jpg" alt="Cama Zee.Dog Skull Zee.Bed Preta para Cães"
+                        class="product-image">
+                    <p class="pProduto">Cama Zee.Dog Skull Zee.Bed Preta para Cães</p>
+                    <p style="font-size: 13px; color: #858484;">A partir de</p>
+                    <p class="preco">R$ 679,00</p>
+                    <button class="add-button">Adicionar</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/produtos/produto6.jpg"
+                        alt="Brinquedo Líder Pet Bola Cravo para Cães - Cores Sortidas" class="product-image">
+                    <p class="pProduto">Brinquedo Líder Pet Bola Cravo para Cães - Cores Sortidas</p>
+                    <p style="font-size: 13px; color: #858484;">A partir de</p>
+                    <p class="preco">R$ 7,99</p>
+                    <button class="add-button">Adicionar</button>
+                </div>
+            </div>
 
-            <h2 class="h2Sec">Tudo para cachorros</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/produtos/produtos_8.jpg"
+                        alt="Bifinho Selections For Pets Strip para Cães Sabor Carne 60 g" class="product-image">
+                    <p class="pProduto">Bifinho Selections For Pets Strip para Cães Sabor Carne 60 g</p>
+                    <p style="font-size: 13px; color: #858484;">A partir de</p>
+                    <p class="preco">R$ 4,99</p>
+                    <button class="add-button">Adicionar</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/produtos/produtos_9.jpg" alt="Tapete Higiênico Zee.Pad Preto para Cães Zee.Dog"
+                        class="product-image">
+                    <p class="pProduto">Tapete Higiênico Zee.Pad Preto para Cães Zee.Dog</p>
+                    <p style="font-size: 13px; color: #858484;">A partir de</p>
+                    <p class="preco">R$ 117,99</p>
+                    <button class="add-button">Adicionar</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/produtos/produtos10.jpg" alt="Bebedouro Fonte Spike Branco para Cães e Gatos"
+                        class="product-image">
+                    <p class="pProduto">Bebedouro Fonte Spike Branco para Cães e Gatos</p>
+                    <p style="font-size: 13px; color: #858484;">A partir de</p>
+                    <p class="preco">R$ 94,99</p>
+                    <button class="add-button">Adicionar</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/produtos/produtos11.jpg" alt="Brinquedo Chalesco Macaco Pelúcia Marrom para Cães"
+                        class="product-image">
+                    <p class="pProduto">Brinquedo Chalesco Macaco Pelúcia Marrom para Cães</p>
+                    <p style="font-size: 13px; color: #858484;">A partir de</p>
+                    <p class="preco">R$ 34,99</p>
+                    <button class="add-button">Adicionar</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/produtos/produtos12.jpg" alt="Fantasia de Unicórnio Cansei de Ser Gato"
+                        class="product-image">
+                    <p class="pProduto">Fantasia de Unicórnio Cansei de Ser Gato</p>
+                    <p style="font-size: 13px; color: #858484;">A partir de</p>
+                    <p class="preco">R$ 79,99</p>
+                    <button class="add-button">Adicionar</button>
+                </div>
+            </div>
+            <!-- Banner contato -->
+            <a href="https://web.whatsapp.com/" target="_blank"><img class="banner-contato"
+                    src="/images/bannerContato.png" alt="Banner Chiquinho de Contato"></a>
+            <!-- Tudo para cachorros -->
+            <h2 id="cachorros" class="h2Sec">Tudo para cachorros</h2>
             <section id="padraoSec">
                 <figure>
                     <img class="imagesPadrao" src="/images/tudoCachorro/racao-selections.png" alt="Ração">
@@ -62,8 +151,7 @@
                     <figcaption>Higiene</figcaption>
                 </figure>
                 <figure>
-                    <img class="imagesPadrao" src="/images/tudoCachorro/brinquedos-cachorro.png"
-                        alt="Brinquedos">
+                    <img class="imagesPadrao" src="/images/tudoCachorro/brinquedos-cachorro.png" alt="Brinquedos">
                     <figcaption>Brinquedos</figcaption>
                 </figure>
                 <figure>
@@ -72,13 +160,12 @@
                     <figcaption>Coleiras, Guia e Peitoral</figcaption>
                 </figure>
                 <figure>
-                    <img class="imagesPadrao" src="/images/tudoCachorro/casa-e-toca.png"
-                        alt="Casa e toca">
+                    <img class="imagesPadrao" src="/images/tudoCachorro/casa-e-toca.png" alt="Casa e toca">
                     <figcaption>Casa e toca</figcaption>
                 </figure>
             </section>
-
-            <h2 class="h2Sec">Tudo para gatos</h2>
+            <!-- Tudo para gatos -->
+            <h2 id="gatos" class="h2Sec">Tudo para gatos</h2>
             <section id="padraoSec">
                 <figure>
                     <img class="imagesPadrao" src="/images/tudoGato/racao-nutrifresh.png" alt="Ração Nutrifresh">
@@ -108,58 +195,63 @@
                     <figcaption>Cama, almofada e toca</figcaption>
                 </figure>
             </section>
-
-            <a href="https://web.whatsapp.com/" target="_blank"><img class="banner-contato" src="/images/bannerContato.png" alt="Banner Chiquinho de Contato"></a>
-
-            <section class="destaques">
-                <h2 class="h2Dest">Destaques</h2>
-                <ul>
-                    <li>
-                        <strong style="color: #F05151">Rações e Alimentação: </strong><span class="corPadraoTexto">
-                            Oferecemos uma seleção de rações premium para cães e gatos,
-                            formuladas para atender às necessidades específicas de cada fase da vida do seu pet.</span>
-                    </li>
-                    <br>
-                    <li>
-                        <strong style="color: #F05151">Brinquedos: </strong><span class="corPadraoTexto">Descubra uma
-                            variedade de brinquedos interativos e estimulantes para manter seu pet ativo e entretido.
-                            Estes brinquedos são projetados para promover o exercício físico e mental,
-                            ajudando a prevenir o tédio e a promover um estilo de vida saudável para o seu
-                            animal.</span>
-                    </li>
-                    <br>
-                    <li>
-                        <strong style="color: #F05151">Acessórios: </strong><span class="corPadraoTexto">Encontre uma
-                            ampla gama de acessórios para o seu pet, incluindo coleiras, guias
-                            e roupas. Estes itens são projetados para proporcionar conforto, segurança e estilo para o
-                            seu amigo de quatro patas.</span>
-                    </li>
-                    <br>
-                    <li>
-                        <strong style="color: #F05151">Cuidados: </strong><span class="corPadraoTexto">Mantenha a saúde
-                            e o bem-estar do seu pet com
-                            nossa seleção de produtos de higiene e cuidados. Estes itens são desenvolvidos para cuidar
-                            da pele e do pelo, garantindo um pet saudável e feliz.</span>
-                    </li>
-                </ul>
-            </section>
-
-
-
-
-            <section id="categorias">
-                <h2>Categorias Populares</h2>
-                <ul>
-                    <li><strong>Cães:</strong> Rações, brinquedos, coleiras e mais.</li>
-                    <li><strong>Gatos:</strong> Rações, arranhadores, brinquedos e mais.</li>
-                    <li><strong>Outros Pets:</strong> Produtos para aves, peixes e pequenos animais.</li>
-                </ul>
-            </section>
-
-            <footer class="footer">
-                <p class="footer-copy">&copy; 2024 Chiquinho Pet Shop - Todos os direitos reservados</p>
-            </footer>
         </div>
+        <section class="destaques">
+            <h2 class="h2Dest">Destaques</h2>
+            <ul>
+                <li>
+                    <strong id="cor-destaques">Rações e Alimentação: </strong><span class="corPadraoTexto">
+                        Oferecemos uma seleção de rações premium para cães e gatos,
+                        formuladas para atender às necessidades específicas de cada fase da vida do seu
+                        pet.</span>
+                </li>
+                <br>
+                <li>
+                    <strong id="cor-destaques">Brinquedos: </strong><span class="corPadraoTexto">Descubra
+                        uma
+                        variedade de brinquedos interativos e estimulantes para manter seu pet ativo e
+                        entretido.
+                        Estes brinquedos são projetados para promover o exercício físico e mental,
+                        ajudando a prevenir o tédio e a promover um estilo de vida saudável para o seu
+                        animal.</span>
+                </li>
+                <br>
+                <li>
+                    <strong id="cor-destaques">Acessórios: </strong><span class="corPadraoTexto">Encontre
+                        uma
+                        ampla gama de acessórios para o seu pet, incluindo coleiras, guias
+                        e roupas. Estes itens são projetados para proporcionar conforto, segurança e estilo para
+                        o
+                        seu amigo de quatro patas.</span>
+                </li>
+                <br>
+                <li>
+                    <strong id="cor-destaques">Cuidados: </strong><span class="corPadraoTexto">Mantenha a
+                        saúde
+                        e o bem-estar do seu pet com
+                        nossa seleção de produtos de higiene e cuidados. Estes itens são desenvolvidos para
+                        cuidar
+                        da pele e do pelo, garantindo um pet saudável e feliz.</span>
+                </li>
+            </ul>
+        </section>
+
+
+
+
+        <section id="categorias">
+            <h2>Categorias Populares</h2>
+            <ul>
+                <li><strong>Cães:</strong> Rações, brinquedos, coleiras e mais.</li>
+                <li><strong>Gatos:</strong> Rações, arranhadores, brinquedos e mais.</li>
+                <li><strong>Outros Pets:</strong> Produtos para aves, peixes e pequenos animais.</li>
+            </ul>
+        </section>
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p class="footer-copy">&copy; 2024 Chiquinho Pet Shop - Todos os direitos reservados</p>
+        </footer>
+    </div>
     </div>
 </body>
 

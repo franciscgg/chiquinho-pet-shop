@@ -6,28 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/styles.css">
     <title>Chiquinho Pet Shop</title>
-    <link rel="shortcut icon" href="/images/faviconteste.png" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="main-container">
-        <header>
-            <img class="logo_chiquinho" src="/images/logo2.jpeg" alt="Logo da Chiquinho Pet Shop">
-        </header>
-
+    <div>
         <nav class="navegacao">
+            <a href="/"><img src="/images/logoChiquinho.png" alt="Logo do Chiquinho Pet Shop"></a>
             <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
             <a href="#cachorros"><i class="fa-solid fa-dog"></i> Cachorro</a>
             <a href="#gatos"><i class="fa-solid fa-cat"></i> Gato</a>
             <a href="#produtos"><i class="fa-solid fa-box"></i> Produtos</a>
-            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Acessórios</a>
             <a href="#"><i class="fa-solid fa-heart-crack"></i> Cuidados</a>
             <a href="SobreNos.html"><i class="fas fa-users"></i> Sobre Nós</a>
 
             <!-- ícones -->
-            <div class="icon-group">
+            <div class="icon-group-menu">
                 <a href="faleConosco.html" title="Fale Conosco"><i class="fa-solid fa-phone"></i></a>
                 <a href="carrinho.html" title="Carrinho"><i class="fas fa-cart-shopping"></i></a>
                 <a href="favoritos.html" title="Favoritos"><i class="fa-solid fa-heart"></i></a>
@@ -36,15 +32,8 @@
         </nav>
 
 
-        <img class="banner" src="/images/chiquinhopetshop2.png" alt="Banner Chiquinho Pet Shop">
+        <img class="banner" src="/images/bannerChiquinho.png" alt="Banner Chiquinho Pet Shop">
         <div class="container">
-            <p class="corPadraoTexto">Bem-vindo ao Chiquinho Pet Shop, o seu destino online para tudo o que seu pet
-                precisa!
-                Aqui você encontra uma ampla variedade de produtos para cães, gatos e outros animais de estimação. De
-                rações e brinquedos a
-                acessórios e cuidados especiais, temos tudo para garantir que seu amigo de quatro patas esteja sempre
-                feliz e saudável.
-            </p>
             <!-- Produtos -->
             <h2 id="produtos" class="h2Prod">Produtos que você só encontra no Chiquinho Pet Shop!</h2>
             <div class="products-grid">
@@ -132,9 +121,6 @@
                     <button class="add-button">Adicionar</button>
                 </div>
             </div>
-            <!-- Banner contato -->
-            <a href="https://web.whatsapp.com/" target="_blank"><img class="banner-contato"
-                    src="/images/bannerContato.png" alt="Banner Chiquinho de Contato"></a>
             <!-- Tudo para cachorros -->
             <h2 id="cachorros" class="h2Sec">Tudo para cachorros</h2>
             <section id="padraoSec">
@@ -196,61 +182,107 @@
                 </figure>
             </section>
         </div>
-        <section class="destaques">
-            <h2 class="h2Dest">Destaques</h2>
-            <ul>
-                <li>
-                    <strong id="cor-destaques">Rações e Alimentação: </strong><span class="corPadraoTexto">
-                        Oferecemos uma seleção de rações premium para cães e gatos,
-                        formuladas para atender às necessidades específicas de cada fase da vida do seu
-                        pet.</span>
-                </li>
-                <br>
-                <li>
-                    <strong id="cor-destaques">Brinquedos: </strong><span class="corPadraoTexto">Descubra
-                        uma
-                        variedade de brinquedos interativos e estimulantes para manter seu pet ativo e
-                        entretido.
-                        Estes brinquedos são projetados para promover o exercício físico e mental,
-                        ajudando a prevenir o tédio e a promover um estilo de vida saudável para o seu
-                        animal.</span>
-                </li>
-                <br>
-                <li>
-                    <strong id="cor-destaques">Acessórios: </strong><span class="corPadraoTexto">Encontre
-                        uma
-                        ampla gama de acessórios para o seu pet, incluindo coleiras, guias
-                        e roupas. Estes itens são projetados para proporcionar conforto, segurança e estilo para
-                        o
-                        seu amigo de quatro patas.</span>
-                </li>
-                <br>
-                <li>
-                    <strong id="cor-destaques">Cuidados: </strong><span class="corPadraoTexto">Mantenha a
-                        saúde
-                        e o bem-estar do seu pet com
-                        nossa seleção de produtos de higiene e cuidados. Estes itens são desenvolvidos para
-                        cuidar
-                        da pele e do pelo, garantindo um pet saudável e feliz.</span>
-                </li>
-            </ul>
+        <!-- Banner contato -->
+        <a href="https://web.whatsapp.com/" target="_blank"><img class="banner-contato" src="/images/bannerContato.png"
+                alt="Banner Chiquinho de Contato"></a>
+        <!-- Nossas marcas parceiras -->
+        <section class="marcas-parceiras">
+            <h2 class="h2Parc">Nossas marcas parceiras</h2>
+            <div class="parceiros-container">
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/Elanco.png"></a>
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/Hills.png"></a>
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/NDPrime.jpg"></a>
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/NutriFresh.png"></a>
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/PetSociety.jpg"></a>
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/PremierPet.jpg"></a>
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/Purina.jpg"></a>
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/Selections.png"></a>
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/Spike.png"></a>
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/SuperSecao.jpg"></a>
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/Whiskas.jpg"></a>
+                <a><img class="logo-Parceiros" src="/images/logoParceiras/ZeeDog.png"></a>
+            </div>
         </section>
 
-
-
-
-        <section id="categorias">
-            <h2>Categorias Populares</h2>
-            <ul>
-                <li><strong>Cães:</strong> Rações, brinquedos, coleiras e mais.</li>
-                <li><strong>Gatos:</strong> Rações, arranhadores, brinquedos e mais.</li>
-                <li><strong>Outros Pets:</strong> Produtos para aves, peixes e pequenos animais.</li>
-            </ul>
+        <!-- Nossas lojas -->
+        <h2 class="h2Sec">Nossas Lojas</h2>
+        <section id="padraoSec">
+            <figure>
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
+                    alt="Loja de Santos">
+                <figcaption class="cidadesFont">Santos</figcaption>
+            </figure>
+            <figure>
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
+                    alt="Loja de Moema">
+                <figcaption class="cidadesFont">Moema</figcaption>
+            </figure>
+            <figure>
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
+                    alt="Loja de Tatuapé">
+                <figcaption class="cidadesFont">Tatuapé</figcaption>
+            </figure>
+            <figure>
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
+                    alt="Loja de Portugal">
+                <figcaption class="cidadesFont">Portugal</figcaption>
+            </figure>
+            <figure>
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
+                    alt="Loja de Sócrates">
+                <figcaption class="cidadesFont">Sócrates</figcaption>
+            </figure>
+            <figure>
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
+                    alt="Loja de Cidade Jardim">
+                <figcaption class="cidadesFont">Cidade Jardim</figcaption>
+            </figure>
         </section>
-        <!-- Rodapé -->
-        <footer class="footer">
-            <p class="footer-copy">&copy; 2024 Chiquinho Pet Shop - Todos os direitos reservados</p>
-        </footer>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="h2Footer">Redes Sociais</h2>
+            <div class="icon-group">
+                <a href="https://www.linkedin.com/in/francisco-helio/" target="_blank">
+                    <i class="fa-brands fa-linkedin footer-icon"></i>
+                </a>
+                <a href="https://github.com/franciscgg" target="_blank">
+                    <i class="fab fa-github footer-icon"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram footer-icon"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <i class="fa-brands fa-tiktok footer-icon"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank">
+                    <i class="fa-brands fa-youtube footer-icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-content">
+            <h2 class="h2Footer">Meios de Pagamento</h2>
+            <div class="icon-group">
+                <img style="width: 25px; height: 26px;" src="/images/meiosDePagamento/mastercard-logo.png">
+                <img style="width: 40px; height: 13px;" src="/images/meiosDePagamento/visa-logo.png">
+                <img style="width: 23px; height: 23px;" src="/images/meiosDePagamento/americanexpress-logo.png">
+                <img style="width: 26px; height: 19px;" src="/images/meiosDePagamento/dinersclub-logo.png">
+                <img style="width: 42px; height: 19px;" src="/images/meiosDePagamento/hypercard-logo.png">
+                <img style="width: 50px; height: 19px;" src="/images/meiosDePagamento/elo-logo.png">
+                <img style="width: 36px; height: 21px;" src="/images/meiosDePagamento/barcode-icon.png">
+                <img style="width: 22px; height: 22px;" src="/images/meiosDePagamento/pix-transparent.svg">
+            </div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2024 Chiquinho Pet Shop. Todos os direitos reservados.
+        </div>
+    </footer>
+
+
+
+
     </div>
     </div>
 </body>

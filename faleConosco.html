@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/styles.css">
     <title>Chiquinho Pet Shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="/images/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Seta para voltar ao topo -->
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <nav class="navegacao">
         <a href="/"><img src="/images/logoChiquinho.png" alt="Logo do Chiquinho Pet Shop"></a>
         <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
@@ -30,21 +36,24 @@
     </nav>
 
     <h2 class="form-Padrao">Bem-vindo ao nosso atendimento</h2>
-    <p class="corPadraoTexto">Tem alguma dúvida ou precisa de ajuda? No Chiquinho Pet Shop, estamos aqui para ajudar! Entre
+    <p class="corPadraoTexto">Tem alguma dúvida ou precisa de ajuda? No Chiquinho Pet Shop, estamos aqui para ajudar!
+        Entre
         em contato conosco
-        através do nosso WhatsApp ou envie um formulário de contato abaixo. Responderemos o mais rápido possível para garantir que você
+        através do nosso WhatsApp ou envie um formulário de contato abaixo. Responderemos o mais rápido possível para
+        garantir que você
         tenha a melhor experiência de compra.</p>
-        <a href="https://web.whatsapp.com/" target="_blank"><img class="banner-contato" src="/images/bannerContato.png" alt="Banner Chiquinho de Contato"></a>
+    <a href="https://web.whatsapp.com/" target="_blank"><img class="banner-contato"
+            src="/images/banners/bannerContato.png" alt="Banner Chiquinho de Contato"></a>
 
     <h3 class="form-Padrao">Formulário de contato</h3>
 
     <form action="" method="post" class="form">
         <label>Nome: </label>
-        <input type="text" maxlength="50" required><br>
+        <input type="text" maxlength="50" placeholder="Digite seu nome" required><br>
         <label>Sobrenome: </label>
-        <input type="text" maxlength="30"><br>
+        <input type="text" maxlength="30" placeholder="Digite seu sobrenome"><br>
         <label>E-mail: </label>
-        <input type="email" maxlength="50" required><br>
+        <input type="email" maxlength="50" placeholder="Digite um e-mail" required><br>
         <label>CPF: </label>
         <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14"
             placeholder="Digite o CPF no formato 000.000.000-00" required><br>
@@ -54,7 +63,7 @@
 
         <label>Selecione um Assunto:</label>
         <select name="assunto" required>
-            <option value=""></option>
+            <option value="" disabled selected hidden></option>
             <optgroup label="Todos os Produtos">
                 <option value="Adote um Pet">Adote um Pet</option>
                 <option value="Banho e Tosa">Banho e Tosa</option>
@@ -68,7 +77,7 @@
 
         <label>Selecione um Motivo:</label>
         <select name="motivo" required>
-            <option value=""></option>
+            <option value="" disabled selected hidden></option>
             <optgroup label="Outros Assuntos">
                 <option value="Informação">Informação</option>
                 <option value="Reclamação">Reclamação</option>
@@ -82,12 +91,94 @@
 
         <button id="EnvFormulario" type="submit">Enviar</button>
     </form>
+    <!-- Rodapé -->
     <footer class="footer">
-        <p class="footer-copy">&copy; 2024 Chiquinho Pet Shop - Todos os direitos reservados</p>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>Horário de funcionamento</h2>
+                <p>De Segunda à Sábado das 08h às 19h</p>
+            </div>
+            <div class="footer-column">
+                <h2>Entre em contato</h2>
+                <p>Telefone: (11) 90000-0000</p>
+                <p>WhatsApp: (11) 90000-0000</p>
+                <p>Email: sac.ecommerce@chiquinhopetshop.com.br</p>
+            </div>
+            <div class="footer-column">
+                <h2>Endereço</h2>
+                <p>Rua Pepinha de lá, 777 – São Paulo</p>
+                <p>São Pepinha dos Campos – SP</p>
+            </div>
+            <div class="footer-column">
+                <h2>Nossas Redes Sociais</h2>
+                <div class="icon-group">
+                    <a href="https://www.linkedin.com/in/francisco-helio/" target="_blank">
+                        <i class="fa-brands fa-linkedin footer-icon"></i>
+                    </a>
+                    <a href="https://github.com/franciscgg" target="_blank">
+                        <i class="fab fa-github footer-icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram footer-icon"></i>
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <i class="fa-brands fa-tiktok footer-icon"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <i class="fa-brands fa-youtube footer-icon"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <div class="footer-info-container">
+        <div>
+            <h2>INFORMAÇÕES</h2>
+            <a href="SobreNos.html">Sobre nós</a>
+            <a href="faleConosco.html">Central de Atendimento</a>
+            <a href="#">Dúvidas Frequentes</a>
+            <a href="#">Nossas lojas</a>
+        </div>
+        <div>
+            <h2>ACESSO RÁPIDO</h2>
+            <a href="#minhaConta">Minha conta</a>
+            <a href="#meusFavorito">Meus Favoritos</a>
+            <a href="#minhaConta">Cadastra-se</a>
+        </div>
+        <div>
+            <h2>POLÍTICAS</h2>
+            <a href="#minhaConta">Entregas</a>
+            <a href="#meusFavorito">Devolução</a>
+            <a href="#minhaConta">Formas de Pagamento</a>
+            <a href="#minhaConta">Políticas de Privacidade</a>
+        </div>
+        <div>
+            <h2>FORMAS DE PAGAMENTO</h2>
+            <div class="icon-group-pag">
+                <img style="width: 25px; height: 26px;" src="/images/meiosDePagamento/mastercard-logo.png">
+                <img style="width: 40px; height: 13px;" src="/images/meiosDePagamento/visa-logo.png">
+                <img style="width: 23px; height: 23px;" src="/images/meiosDePagamento/americanexpress-logo.png">
+                <img style="width: 26px; height: 19px;" src="/images/meiosDePagamento/dinersclub-logo.png">
+                <img style="width: 42px; height: 19px;" src="/images/meiosDePagamento/hypercard-logo.png">
+                <img style="width: 50px; height: 19px;" src="/images/meiosDePagamento/elo-logo.png">
+                <img style="width: 36px; height: 21px;" src="/images/meiosDePagamento/barcode-icon.png">
+                <img style="width: 22px; height: 22px;" src="/images/meiosDePagamento/pix-transparent.svg">
+            </div>
+            <img src="/images/meiosDePagamento/google-safe-browsing.png">
+        </div>
+    </div>
 
+
+    <div class="text-final">
+        <div class="footer-container">
+            <p>CNPJ 00.000.000/0000-00. E-mail: sac.ecommerce@chiquinhopetshop.com.br. Imagens meramente ilustrativas. É
+                proibida a reprodução parcial ou total do conteúdo desse site.</p>
+            <p>Copyright © 2024 Chiquinho Pet Shop – Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
 </body>
 
 </html>

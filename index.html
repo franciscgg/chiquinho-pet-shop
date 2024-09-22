@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="/style/styles.css">
     <title>Chiquinho Pet Shop</title>
     <link rel="icon" href="/images/favicon.ico" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Seta para voltar ao topo -->
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
     <div>
         <nav class="navegacao">
             <a href="/"><img src="/images/logoChiquinho.png" alt="Logo do Chiquinho Pet Shop"></a>
@@ -30,9 +34,23 @@
                 <a href="#User" title="Minha conta"><i class="fa-solid fa-user"></i></a>
             </div>
         </nav>
+        <!-- Banners -->
+        <div class="banner-container">
+            <img class="banner-slide active" src="/images/banners/bannerMaiorRede.png" alt="Banner 1">
+            <img class="banner-slide" src="/images/banners/bannerDesconto.png" alt="Banner 2">
+            <img class="banner-slide" src="/images/banners/bannerTudoQueSeuPetPrecisa.png" alt="Banner 3">
+            <img class="banner-slide" src="/images/banners/bannerGanhePetisco.png" alt="Banner 4">
+        </div>
+
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
 
 
-        <img class="banner" src="/images/bannerChiquinho.png" alt="Banner Chiquinho Pet Shop">
+
         <div class="container">
             <!-- Produtos -->
             <h2 id="produtos" class="h2Prod">Produtos que você só encontra no Chiquinho Pet Shop!</h2>
@@ -183,8 +201,74 @@
             </section>
         </div>
         <!-- Banner contato -->
-        <a href="https://web.whatsapp.com/" target="_blank"><img class="banner-contato" src="/images/bannerContato.png"
-                alt="Banner Chiquinho de Contato"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img class="banner-contato"
+                src="/images/banners/bannerContato.png" alt="Banner Chiquinho de Contato"></a>
+        <!-- Produtos mais vendidos -->
+        <h2 id="produtos" class="h2Prod">Melhores Ofertas!</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="images/Ofertas/1624452373578_mini.jpg"
+                    alt="Limpador de Lágrimas Pet Clean para Cães e Gatos - 100ml" class="product-image">
+                <p class="pProduto">Limpador de Lágrimas Pet Clean para Cães e Gatos - 100ml</p>
+                <p style="font-size: 13px; color: #858484;">A partir de</p>
+                <p class="preco">R$ 19,99</p>
+                <button class="add-button">Adicionar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/Ofertas/1651770899466_mini.jpg" alt="Osso Fêmur Suíno Defumado Churraspet para Cães"
+                    class="product-image">
+                <p class="pProduto">Osso Fêmur Suíno Defumado Churraspet para Cães</p>
+                <p style="font-size: 13px; color: #858484;">A partir de</p>
+                <p class="preco">R$ 12,99</p>
+                <button class="add-button">Adicionar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/Ofertas/1658419164771_mini.jpg"
+                    alt="Ração Golden Fórmula Mini Bits Para Cães Adultos de Porte Pequeno Sabor Carne e Arroz"
+                    class="product-image">
+                <p class="pProduto">Ração Golden Fórmula Mini Bits Para Cães Adultos de Porte Pequeno Sabor Carne e
+                    Arroz</p>
+                <p style="font-size: 13px; color: #858484;">A partir de</p>
+                <p class="preco">R$ 166,99</p>
+                <button class="add-button">Adicionar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/Ofertas/1713268716370_mini.jpg" alt="Areia Higiênica Pipicat Classic para Gatos"
+                    class="product-image">
+                <p class="pProduto">Areia Higiênica Pipicat Classic para Gatos</p>
+                <p style="font-size: 13px; color: #858484;">A partir de</p>
+                <p class="preco">R$ 17,99</p>
+                <button class="add-button">Adicionar</button>
+            </div>
+            <div class="product-card">
+                <img src="images/Ofertas/1725482554107_mini.jpg"
+                    alt="Areia Higiênica Chalesco com Micro Cristais de Sílica para Gatos - 1,8kg"
+                    class="product-image">
+                <p class="pProduto">Areia Higiênica Chalesco com Micro Cristais de Sílica para Gatos - 1,8kg</p>
+                <p style="font-size: 13px; color: #858484;">A partir de</p>
+                <p class="preco">R$ 42,99</p>
+                <button class="add-button">Adicionar</button>
+            </div>
+        </div>
+
+        <!-- Receber promoções e-mail -->
+
+        <div id="cadastro-container">
+            <p id="cadastro-texto">Cadastre-se e receba nossas promoções e novidades antes de todo mundo.</p>
+            <form id="cadastro-form">
+                <input type="email" id="cadastro-email" placeholder="Seu e-mail" required>
+                <select id="cadastro-pet">
+                    <option value="" disabled selected>Seu pet</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="outro">Outros Pets</option>
+                </select>
+                <button type="submit" id="cadastro-btn">Cadastrar</button>
+            </form>
+            <p id="cadastro-privacidade">Ao se cadastrar você concorda com a nossa <a href="#"
+                    id="link-privacidade">política de privacidade</a>.</p>
+        </div>
+
         <!-- Nossas marcas parceiras -->
         <section class="marcas-parceiras">
             <h2 class="h2Parc">Nossas marcas parceiras</h2>
@@ -208,33 +292,27 @@
         <h2 class="h2Sec">Nossas Lojas</h2>
         <section id="padraoSec">
             <figure>
-                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
-                    alt="Loja de Santos">
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png" alt="Loja de Santos">
                 <figcaption class="cidadesFont">Santos</figcaption>
             </figure>
             <figure>
-                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
-                    alt="Loja de Moema">
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png" alt="Loja de Moema">
                 <figcaption class="cidadesFont">Moema</figcaption>
             </figure>
             <figure>
-                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
-                    alt="Loja de Tatuapé">
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png" alt="Loja de Tatuapé">
                 <figcaption class="cidadesFont">Tatuapé</figcaption>
             </figure>
             <figure>
-                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
-                    alt="Loja de Portugal">
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png" alt="Loja de Portugal">
                 <figcaption class="cidadesFont">Portugal</figcaption>
             </figure>
             <figure>
-                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
-                    alt="Loja de Sócrates">
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png" alt="Loja de Sócrates">
                 <figcaption class="cidadesFont">Sócrates</figcaption>
             </figure>
             <figure>
-                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png"
-                    alt="Loja de Cidade Jardim">
+                <img class="imagesPadrao" src="/images/nossasLojas/nossaLoja.png" alt="Loja de Cidade Jardim">
                 <figcaption class="cidadesFont">Cidade Jardim</figcaption>
             </figure>
         </section>
@@ -242,29 +320,69 @@
 
     <!-- Rodapé -->
     <footer class="footer">
-        <div class="footer-content">
-            <h2 class="h2Footer">Redes Sociais</h2>
-            <div class="icon-group">
-                <a href="https://www.linkedin.com/in/francisco-helio/" target="_blank">
-                    <i class="fa-brands fa-linkedin footer-icon"></i>
-                </a>
-                <a href="https://github.com/franciscgg" target="_blank">
-                    <i class="fab fa-github footer-icon"></i>
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram footer-icon"></i>
-                </a>
-                <a href="https://www.tiktok.com" target="_blank">
-                    <i class="fa-brands fa-tiktok footer-icon"></i>
-                </a>
-                <a href="https://www.youtube.com" target="_blank">
-                    <i class="fa-brands fa-youtube footer-icon"></i>
-                </a>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>Horário de funcionamento</h2>
+                <p>De Segunda à Sábado das 08h às 19h</p>
+            </div>
+            <div class="footer-column">
+                <h2>Entre em contato</h2>
+                <p>Telefone: (11) 90000-0000</p>
+                <p>WhatsApp: (11) 90000-0000</p>
+                <p>Email: sac.ecommerce@chiquinhopetshop.com.br</p>
+            </div>
+            <div class="footer-column">
+                <h2>Endereço</h2>
+                <p>Rua Pepinha de lá, 777 – São Paulo</p>
+                <p>São Pepinha dos Campos – SP</p>
+            </div>
+            <div class="footer-column">
+                <h2>Nossas Redes Sociais</h2>
+                <div class="icon-group">
+                    <a href="https://www.linkedin.com/in/francisco-helio/" target="_blank">
+                        <i class="fa-brands fa-linkedin footer-icon"></i>
+                    </a>
+                    <a href="https://github.com/franciscgg" target="_blank">
+                        <i class="fab fa-github footer-icon"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fa-brands fa-instagram footer-icon"></i>
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <i class="fa-brands fa-tiktok footer-icon"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <i class="fa-brands fa-youtube footer-icon"></i>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="footer-content">
-            <h2 class="h2Footer">Meios de Pagamento</h2>
-            <div class="icon-group">
+    </footer>
+
+    <div class="footer-info-container">
+        <div>
+            <h2>INFORMAÇÕES</h2>
+            <a href="SobreNos.html">Sobre nós</a>
+            <a href="faleConosco.html">Central de Atendimento</a>
+            <a href="#">Dúvidas Frequentes</a>
+            <a href="#">Nossas lojas</a>
+        </div>
+        <div>
+            <h2>ACESSO RÁPIDO</h2>
+            <a href="#minhaConta">Minha conta</a>
+            <a href="#meusFavorito">Meus Favoritos</a>
+            <a href="#minhaConta">Cadastra-se</a>
+        </div>
+        <div>
+            <h2>POLÍTICAS</h2>
+            <a href="#minhaConta">Entregas</a>
+            <a href="#meusFavorito">Devolução</a>
+            <a href="#minhaConta">Formas de Pagamento</a>
+            <a href="#minhaConta">Políticas de Privacidade</a>
+        </div>
+        <div>
+            <h2>FORMAS DE PAGAMENTO</h2>
+            <div class="icon-group-pag">
                 <img style="width: 25px; height: 26px;" src="/images/meiosDePagamento/mastercard-logo.png">
                 <img style="width: 40px; height: 13px;" src="/images/meiosDePagamento/visa-logo.png">
                 <img style="width: 23px; height: 23px;" src="/images/meiosDePagamento/americanexpress-logo.png">
@@ -274,17 +392,23 @@
                 <img style="width: 36px; height: 21px;" src="/images/meiosDePagamento/barcode-icon.png">
                 <img style="width: 22px; height: 22px;" src="/images/meiosDePagamento/pix-transparent.svg">
             </div>
+            <img src="/images/meiosDePagamento/google-safe-browsing.png">
         </div>
-        <div class="footer-copy">
-            &copy; 2024 Chiquinho Pet Shop. Todos os direitos reservados.
-        </div>
-    </footer>
+    </div>
 
 
+    <div class="text-final">
+        <div class="footer-container">
+            <p>CNPJ 00.000.000/0000-00. E-mail: sac.ecommerce@chiquinhopetshop.com.br. Imagens meramente ilustrativas. É
+                proibida a reprodução parcial ou total do conteúdo desse site.</p>
+            <p>Copyright © 2024 Chiquinho Pet Shop – Todos os direitos reservados.</p>
+        </div>
+    </div>
 
 
     </div>
     </div>
+    <script src="/main.js"></script>
 </body>
 
 </html>
